@@ -1,11 +1,11 @@
+import { notFound } from 'next/navigation';
 import { createClient } from 'microcms-js-sdk';
 import type {
-  MicroCMSQueries,
-  MicroCMSImage,
-  MicroCMSDate,
   MicroCMSContentId,
+  MicroCMSDate,
+  MicroCMSImage,
+  MicroCMSQueries,
 } from 'microcms-js-sdk';
-import { notFound } from 'next/navigation';
 
 // カテゴリーの型定義
 export type Category = {

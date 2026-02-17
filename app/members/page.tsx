@@ -1,7 +1,9 @@
 import Image from 'next/image';
-import { getMembersList } from '@/app/_libs/microcms';
-import styles from './page.module.css';
+
 import ButtonLink from '@/app/_components/ButtonLink';
+import { getMembersList } from '@/app/_libs/microcms';
+
+import styles from './page.module.css';
 
 type Props = {
   searchParams: Promise<{

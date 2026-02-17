@@ -1,11 +1,11 @@
 .header {
   position: absolute;
-  padding: 16px 24px 8px;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 16px 24px 8px;
 }
 
 .logoLink {
@@ -13,11 +13,11 @@
 }
 
 .logo {
-  height: 24px;
   width: auto;
+  height: 24px;
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .header {
     padding: 24px 16px 8px;
   }

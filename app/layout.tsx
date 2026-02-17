@@ -1,8 +1,11 @@
 import { Metadata } from 'next';
-import { getMeta } from '@/app/_libs/microcms';
+
 import Footer from '@/app/_components/Footer';
 import Header from '@/app/_components/Header';
+import { getMeta } from '@/app/_libs/microcms';
+
 import './globals.css';
+
 import styles from './layout.module.css';
 
 export async function generateMetadata(): Promise<Metadata> {

@@ -1,14 +1,15 @@
 .list {
   border-bottom: 1px solid var(--color-border-light);
 }
+
 .list:last-child {
   border-bottom: none;
 }
 
 .link {
   display: flex;
-  align-items: flex-start;
   gap: 40px;
+  align-items: flex-start;
   padding: 24px 0;
 }
 
@@ -19,35 +20,36 @@
 }
 
 .title {
+  margin-bottom: 0.5rem;
   font-size: 1.1rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
 .meta {
   display: flex;
-  align-items: center;
   gap: 16px;
+  align-items: center;
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .link {
     display: block;
     padding: 16px 0;
   }
+
   .image {
     display: none;
   }
 
   .title {
+    margin-bottom: 0.4rem;
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 0.4rem;
   }
 
   .meta {
     display: flex;
-    align-items: center;
     gap: 16px;
+    align-items: center;
   }
 }
