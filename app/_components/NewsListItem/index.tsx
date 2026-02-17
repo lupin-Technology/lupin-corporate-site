@@ -1,9 +1,11 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { Article } from '@/app/_libs/microcms';
-import styles from './index.module.css';
-import PublishedDate from '../Date';
+
 import Category from '../Category';
+import PublishedDate from '../Date';
+import styles from './index.module.css';
 
 type Props = {
   news: Article;

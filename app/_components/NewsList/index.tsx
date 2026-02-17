@@ -1,4 +1,5 @@
 import { Article } from '@/app/_libs/microcms';
+
 import NewsListItem from '../NewsListItem';
 
 type Props = {

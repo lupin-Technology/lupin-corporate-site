@@ -1,6 +1,7 @@
-import { formatInTimeZone } from 'date-fns-tz';
 import { load } from 'cheerio';
+import { formatInTimeZone } from 'date-fns-tz';
 import hljs from 'highlight.js';
+
 import 'highlight.js/styles/hybrid.css';
 
 export const formatDate = (date: string) => {
