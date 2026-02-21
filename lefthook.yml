@@ -2,12 +2,12 @@ pre-commit:
   parallel: true
   commands:
     format:
-      glob: "*.{js,jsx,ts,tsx,json,css}"
+      glob: "*.{js,mjs,ts,tsx,json,css}"
       run: npx prettier --write {staged_files}
       stage_fixed: true
     lint:
-      glob: "*.{js,jsx,ts,tsx}"
-      run: npx next lint --file {staged_files}
+      glob: "*.{js,mjs,ts,tsx}"
+      run: npx eslint {staged_files}
     lint-css:
       glob: "*.css"
       run: npx stylelint --fix {staged_files}
