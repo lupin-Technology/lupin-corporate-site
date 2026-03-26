@@ -1,5 +1,6 @@
 import { z } from "zod";
 
+import type { ERPNextLead } from "@/lib/erpnext";
 import type { HubSpotField } from "@/lib/hubspot";
 
 export const contactFormSchema = z.object({
@@ -31,4 +32,16 @@ export function toHubSpotFields(data: ContactFormData): HubSpotField[] {
   }
 
   return fields;
+}
+
+/** ContactFormData を ERPNext Lead データに変換する */
+export function toERPNextLead(data: ContactFormData): ERPNextLead {
+  return {
+    lead_name: `${data.lastName} ${data.firstName}`,
+    email_id: data.email,
+    phone: data.phone,
+    company_name: data.company,
+    source: "Website",
+    notes: data.message,
+  };
 }
