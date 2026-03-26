@@ -13,6 +13,11 @@ if echo "$commit_msg" | grep -qE '^Revert '; then
   exit 0
 fi
 
+# fixup / squash / amend コミットはスキップ
+if echo "$commit_msg" | grep -qE '^(fixup|squash|amend)! '; then
+  exit 0
+fi
+
 # prefix 形式を検証
 # type: description または type(scope): description
 pattern='^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\(.+\))?: .+'
