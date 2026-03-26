@@ -4,7 +4,7 @@
 
 ## セットアップ
 
-`npm install` を実行すると、`prepare` スクリプトにより自動的に lefthook がセットアップされます。
+`npm install` を実行すると自動的に lefthook がセットアップされます。
 
 ```bash
 npm install
@@ -16,12 +16,12 @@ npm install
 
 コミット時にステージされたファイルに対して以下のチェックを**並列**で実行します。
 
-| コマンド | 対象ファイル | 説明 |
-|---------|------------|------|
-| `format` | `*.{js,jsx,ts,tsx,json,css}` | Prettier による自動フォーマット |
-| `lint` | `*.{js,jsx,ts,tsx}` | Next.js（ESLint）による Lint チェック |
-| `lint-css` | `*.css` | Stylelint による CSS 自動修正 |
-| `typecheck` | プロジェクト全体 | TypeScript の型チェック |
+| コマンド    | 対象ファイル                 | 説明                                  |
+| ----------- | ---------------------------- | ------------------------------------- |
+| `format`    | `*.{js,mjs,ts,tsx,json,css}` | Prettier による自動フォーマット       |
+| `lint`      | `*.{js,mjs,ts,tsx}`          | Next.js（ESLint）による Lint チェック |
+| `lint-css`  | `*.css`                      | Stylelint による CSS 自動修正         |
+| `typecheck` | プロジェクト全体             | TypeScript の型チェック               |
 
 ### pre-push
 
@@ -42,19 +42,19 @@ type(scope): description
 
 ### 使用可能な type
 
-| type | 説明 |
-|------|------|
-| `feat` | 新機能の追加 |
-| `fix` | バグ修正 |
-| `docs` | ドキュメントの変更 |
-| `style` | コードの意味に影響しない変更（空白、フォーマット等） |
-| `refactor` | バグ修正でも機能追加でもないコード変更 |
-| `perf` | パフォーマンス改善 |
-| `test` | テストの追加・修正 |
-| `build` | ビルドシステムや外部依存の変更 |
-| `ci` | CI 設定の変更 |
-| `chore` | その他の変更 |
-| `revert` | コミットの取り消し |
+| type       | 説明                                                 |
+| ---------- | ---------------------------------------------------- |
+| `feat`     | 新機能の追加                                         |
+| `fix`      | バグ修正                                             |
+| `docs`     | ドキュメントの変更                                   |
+| `style`    | コードの意味に影響しない変更（空白、フォーマット等） |
+| `refactor` | バグ修正でも機能追加でもないコード変更               |
+| `perf`     | パフォーマンス改善                                   |
+| `test`     | テストの追加・修正                                   |
+| `build`    | ビルドシステムや外部依存の変更                       |
+| `ci`       | CI 設定の変更                                        |
+| `chore`    | その他の変更                                         |
+| `revert`   | コミットの取り消し                                   |
 
 ### 例
 
@@ -94,7 +94,7 @@ npx lefthook install
 
 ```bash
 npm run format
-npm run lint:css:fix
+npm run lint:css -- --fix
 git add .
 git commit
 ```

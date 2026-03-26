@@ -2,11 +2,12 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
   },
-  "editor.formatOnSave": true,
   "stylelint.validate": ["css"],
-  "css.validate": false
+  "css.validate": false,
+  "tailwindCSS.experimental.configFile": "src/app/globals.css"
 }

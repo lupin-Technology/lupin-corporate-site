@@ -1,44 +1,17 @@
-# シンプルなコーポレートサイト
+# Lupin Corporate Site
 
-![](public/img-cover.png)
+Lupin Technology のコーポレートサイトです。
 
-microCMS 公式のシンプルなコーポレートサイトのテンプレートです。
-サイト内のお問い合わせ送信先として CRM である [HubSpot](https://www.hubspot.jp/) を利用しています。
+## 技術スタック
+
+- [Next.js](https://nextjs.org/) 16 (App Router)
+- [React](https://react.dev/) 19
+- [Tailwind CSS](https://tailwindcss.com/) v4
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## 動作環境
 
 Node.js 22 以上
-
-## 環境変数の設定
-
-ルート直下に`.env`ファイルを作成し、下記の情報を入力してください。
-
-```
-MICROCMS_API_KEY=xxxxxxxxxx
-MICROCMS_SERVICE_DOMAIN=xxxxxxxxxx
-BASE_URL=xxxxxxxxxx
-HUBSPOT_PORTAL_ID=xxxxxxxx
-HUBSPOT_FORM_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-```
-
-`MICROCMS_API_KEY`  
-microCMS 管理画面の「サービス設定 > API キー」から確認することができます。
-
-`MICROCMS_SERVICE_DOMAIN`  
-microCMS 管理画面の URL（https://xxxxxxxx.microcms.io）の xxxxxxxx の部分です。
-
-`BASE_URL`
-デプロイ先の URL です。プロトコルから記載してください。
-
-例）  
-開発環境 → http://localhost:3000  
-本番環境 → https://xxxxxxxx.vercel.app/ など
-
-`HUBSPOT_PORTAL_ID`
-HubSpot のアカウント ID
-
-`HUBSPOT_FORM_ID`
-HubSpot のフォームに割り当てられる ID
 
 ## 開発の仕方
 
@@ -54,14 +27,22 @@ npm install
 npm run dev
 ```
 
-3. 開発環境へのアクセス  
-   [http://localhost:3000](http://localhost:3000)にアクセス
+3. 開発環境へのアクセス
+   [http://localhost:3000](http://localhost:3000) にアクセス
 
-## 解説ドキュメント
+## スクリプト一覧
 
-- [コンテンツ管理](https://github.com/microcmsio/nextjs-simple-corporate-site-template/blob/main/docs/content-management.md)
-- [画面プレビューの設定](https://github.com/microcmsio/nextjs-simple-corporate-site-template/blob/main/docs/content-preview.md)
-- [ディレクトリ構成](https://github.com/microcmsio/nextjs-simple-corporate-site-template/blob/main/docs/directory-structure.md)
-- [HubSpot の準備](https://github.com/microcmsio/nextjs-simple-corporate-site-template/blob/main/docs/hubspot-setting.md)
-- [Vercel へのデプロイ](https://github.com/microcmsio/nextjs-simple-corporate-site-template/blob/main/docs/vercel-deploy.md)
+| コマンド               | 説明                            |
+| ---------------------- | ------------------------------- |
+| `npm run dev`          | 開発サーバーの起動              |
+| `npm run build`        | プロダクションビルド            |
+| `npm run lint`         | ESLint によるコードチェック     |
+| `npm run lint:css`     | Stylelint による CSS チェック   |
+| `npm run typecheck`    | TypeScript の型チェック         |
+| `npm run format`       | Prettier による自動フォーマット |
+| `npm run format:check` | フォーマットチェック（CI 向け） |
+
+## ドキュメント
+
+- [Vercel へのデプロイ](docs/vercel-deploy.md)
 - [Git Hooks（lefthook）](docs/git-hooks.md)
