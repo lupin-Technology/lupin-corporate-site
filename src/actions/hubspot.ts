@@ -9,7 +9,7 @@ export type ContactFormState = {
   fieldErrors?: Record<string, string[]>;
 };
 
-export async function submitContactForm(
+export async function submitContactToHubSpot(
   formData: FormData,
 ): Promise<ContactFormState> {
   const raw = {
