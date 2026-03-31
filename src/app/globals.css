@@ -49,7 +49,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(100% 0 0deg);
+  --background: #fff;
   --foreground: oklch(14.5% 0 0deg);
   --card: oklch(100% 0 0deg);
   --card-foreground: oklch(14.5% 0 0deg);
@@ -117,11 +117,130 @@
 }
 
 @layer base {
+  html {
+    font-feature-settings: "palt", "kern";
+    font-kerning: normal;
+    text-size-adjust: 100%;
+    background-color: #fff;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
 
   body {
     @apply bg-background text-foreground;
+
+    font-family:
+      futura-pt, "yakuhanjp_narrow", var(--font-noto-sans-jp), "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", "Yu Gothic", yugothic,
+      meiryo, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    vertical-align: baseline;
+    overflow-wrap: break-word;
+    white-space: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@keyframes kv-draw {
+  0% {
+    opacity: 1;
+    fill: transparent;
+    stroke-dashoffset: 2000;
+  }
+
+  40% {
+    opacity: 1;
+    fill: transparent;
+    stroke-dashoffset: 2000;
+  }
+
+  60% {
+    stroke-width: 1;
+  }
+
+  90% {
+    opacity: 1;
+    fill: transparent;
+    stroke-width: 0;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    opacity: 1;
+    fill: transparent;
+    stroke-width: 0;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes kv-fill {
+  100% {
+    fill: rgb(51 51 51);
+    fill-opacity: 1;
+    stroke: none;
+  }
+}
+
+@keyframes gradient-anim {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 700% 50%;
+  }
+}
+
+@keyframes right-in {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes arrow-forward {
+  0% {
+    transform: translateX(0);
+  }
+
+  49% {
+    transform: translateX(150%);
+  }
+
+  50% {
+    transform: translateX(-150%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes img-crossfade-3 {
+  0% {
+    opacity: 0;
+  }
+
+  6.67% {
+    opacity: 1;
+  }
+
+  26.67% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
