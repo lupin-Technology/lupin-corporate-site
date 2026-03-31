@@ -20,6 +20,12 @@
     ],
     "import-notation": "string",
     "function-no-unknown": [true, { "ignoreFunctions": ["theme"] }],
-    "keyframes-name-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$"
+    "keyframes-name-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+    "selector-class-pattern": [
+      "^[a-z][a-z0-9]*(-[a-z0-9]+)*(__[a-z][a-z0-9]*(-[a-z0-9]+)*)?(--[a-z0-9][a-z0-9]*(-[a-z0-9]+)*)?$",
+      { "resolveNestedSelectors": true }
+    ],
+    "number-max-precision": null,
+    "no-descending-specificity": null
   }
 }

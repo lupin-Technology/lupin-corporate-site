@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="631.102" height="629.369" viewBox="0 0 631.102 629.369">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.674" y1="0.029" x2="0.02" y2="0.967" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe65f"/>
+      <stop offset="0.389" stop-color="#96da8b"/>
+      <stop offset="0.68" stop-color="#09d2cc"/>
+      <stop offset="1" stop-color="#0bb3e6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.972" y1="0.848" x2="0.034" y2="0.852" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fae561"/>
+      <stop offset="0.522" stop-color="#dd7385"/>
+      <stop offset="1" stop-color="#cc73b7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.329" y1="0.026" x2="1" y2="0.968" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cc73b7"/>
+      <stop offset="0.345" stop-color="#b973ec"/>
+      <stop offset="0.67" stop-color="#8789f5"/>
+      <stop offset="1" stop-color="#00b6e5"/>
+    </linearGradient>
+  </defs>
+  <g id="chart_circle" transform="translate(-280.041 -237.477)">
+    <path id="パス_3103" data-name="パス 3103" d="M346.848,625.148v0h0V621.2A311.285,311.285,0,0,0,555.271,116.484l2.821-2.821A314.9,314.9,0,0,1,346.848,625.148Z" transform="translate(282.424 241.148)" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient)"/>
+    <path id="パス_3122" data-name="パス 3122" d="M506.465,71.09A311.909,311.909,0,0,0,118,70.708l-1.681-1.681a314.565,314.565,0,0,1,392.875-.663l-2.726,2.726Z" transform="translate(282.424 237.977)" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient-2)"/>
+    <path id="パス_3109" data-name="パス 3109" d="M279.876,624.987h0A314.858,314.858,0,0,1,69.459,114.49l1.518,1.518A311.93,311.93,0,0,0,7.415,370.286,309.393,309.393,0,0,0,48.623,475.68,311.418,311.418,0,0,0,279.876,621.293v3.693Z" transform="translate(280.542 241.148)" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>
